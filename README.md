@@ -64,7 +64,46 @@ Procure sempre criar atributos separados para facilitar os comentários de docum
 
 Nomenclaturas
 ------------
-Guia para Nomenclaturas.
+Preserve as seguintes diretrizes para nomeação de variáveis, constantes, atributos, métodos e classes:
+* Utilize nomes sucintos e diretos referente à que se refere a variável, constante, atributo, método ou classe.
+* Evite nomes muito extensos.
+* Prefira nomes em inglês. Desse modo, palavras que na grafia em português exigem acentuação não ficarão difíceis de ler/compreender.
+* Utilize UpperCamelCase para definições de classes.
+* Utilize lowerCamelCase para definições de variáveis, atributos e métodos.
+* Utilize maiúsculas e palavras separadas por underline (_) para definição de constantes.
+* Prefira variáveis no SINGULAR e arrays no PLURAL. Isso auxiliará a compreensão de conjuntos ou strings.
+
+Exemplo:
+```php
+    // lowerCamelCase para Variáveis e métodos
+    $indexPosition = 1;
+    function doAnything();
+     
+    // MAIÚSCULAS e separadas por ''underline'' "_" para constantes
+    define ("INDEX_POSITION" , 1);
+     
+    // UpperCamelCase para classes
+    class FoolAround();
+     
+    // No singular, para demonstrar um elemento string
+    $fruta = "Maçã";
+     
+    // No plural, para demonstrar conjunto de elementos
+    $frutas = [
+        1 => "Maçã" ,
+        2 => "Laranja"
+    ];
+```
+
+Exemplos de péssimo uso:
+```php
+    // definições tudo em minúsculo ou nomes gigantes dificultam a leitura e entendimento
+    $indexposition = 1;
+     
+    function methodToDoWhateverThingThatYouWant();
+     
+    class ClassToDoWhateverThingThatYouWant()
+```
 
 
 Indentação
