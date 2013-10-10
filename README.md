@@ -124,7 +124,33 @@ Preserve as seguintes diretrizes para nomeação de variáveis, constantes, atri
 
 Indentação
 ------------
-Guia para indentação
+Indentação nunca é perda de tempo. Ela torna o código muito mais agradável de ler e compreender. 
+
+* Configure seu editor para utilizar a indentação de 1 TAB (4 espaços).
+* Prefira estruturas de condições e repetições utilizando seu inicalizador na mesma linha da definição do comando.
+* Obedeça a hierarquia dos elementos encadeados. Utilize 1 TAB para cada novo elemento filho.
+
+```php
+    if ( $personagem === 'Goku' ) :
+        echo "Oi, eu sou o Goku!";
+    else :
+        echo "Cacaroto, seu verme imundo!";
+    endif;
+```
+
+* Utilize identação em elementos separados por vírgula, concatenação (.) e/ou arrays.
+
+```php
+    $frutas = [
+        1 => "Maçã" ,
+        2 => "Laranja"
+    ];
+    
+    public $foo,
+           $bar = 1,
+           $trip = "test",
+           $myArray = [];
+```
 
 
 Comentários
