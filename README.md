@@ -155,4 +155,21 @@ Indentação nunca é perda de tempo. Ela torna o código muito mais agradável 
 
 Comentários
 ------------
-Guia para comentários
+```html
+    Antes de deixar um comentário, releia seu código e reescreva-o de uma maneira que ele não precise de comentário :)
+```
+
+* Comentários só devem ser usados quando realmente necessário.
+* Para comentários de 01 linha, utilize //
+* Para comentários que exigem múltiplas linhas, utilize o formato phpDocumentor /** */
+
+```php
+    // Diretório principal do projeto
+    $dirProject = "pasta/www/";
+    
+    /**
+      * Diretório principal do projeto
+      * Precisa utilizar caminho completo (ROOT)
+      */
+    $dirProject = "pasta/www/";
+```
